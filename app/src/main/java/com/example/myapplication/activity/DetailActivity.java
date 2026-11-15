@@ -90,7 +90,6 @@ public class DetailActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             movie = getIntent().getSerializableExtra(EXTRA_MOVIE, Movie.class);
         } else {
-            //noinspection deprecation
             movie = (Movie) getIntent().getSerializableExtra(EXTRA_MOVIE);
         }
 

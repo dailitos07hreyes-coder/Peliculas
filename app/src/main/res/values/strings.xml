@@ -1,7 +1,6 @@
 <resources>
     <!-- Nombre de la aplicación -->
     <string name="nombre_app">iPeliculas</string>
-    <string name="app_name">iPeliculas</string>
 
     <!-- Títulos de la barra superior (Toolbar) -->
     <string name="titulo_barra_cartelera">Cartelera de Cine</string>
@@ -19,22 +18,11 @@
     <string name="etiqueta_fecha_estreno">Fecha de estreno:</string>
     <string name="etiqueta_sinopsis">Sinopsis</string>
     <string name="etiqueta_valoracion">Valoración</string>
-    <string name="btn_volver">Volver</string>
 
     <!-- Pantalla de Mapa del Cine -->
     <string name="nombre_cine">Centro Comercial Cine Planelles</string>
-    <string name="subtitulo_cine">Cine de referencia en Utrera</string>
+    <string name="subtitulo_cine">Cine de referencia en Marchena</string>
     <string name="btn_centrar_cine">Centrar</string>
-
-    <!-- Ruta en Mapa -->
-    <string name="origen_ruta">Inicio: Centro de Utrera</string>
-    <string name="subtitulo_ruta_activa">Ruta trazada: 2.1 km • 5 min en coche</string>
-    <string name="msg_ruta_trazada">Ruta hacia el cine dibujada en el mapa</string>
-    <string name="btn_ver_ruta">Ver Ruta</string>
-    <string name="btn_navegar_gps">GPS Guiado</string>
-    <string name="btn_anterior_paso">Anterior</string>
-    <string name="btn_siguiente_paso">Siguiente</string>
-    <string name="btn_ver_todo">Ver Todo</string>
 
     <!-- Pantalla Acerca de -->
     <string name="acerca_de_nombre_app">iPeliculas</string>
@@ -49,7 +37,4 @@
     <string name="acerca_de_contenido_caracteristicas">• Cartelera con RecyclerView y animaciones dinámicas.\n• Vista detallada con sinopsis, director y fecha de estreno.\n• Localización del cine e indicaciones de ruta con Google Maps.\n• Interfaz oscura con estética cinematográfica y diseño responsivo.</string>
     <string name="acerca_de_titulo_tecnologias">Tecnologías Utilizadas</string>
     <string name="acerca_de_contenido_tecnologias">• Java y Android SDK\n• Material Design 3 y CardView\n• RecyclerView con animaciones de diseño\n• Integración con Google Maps (Ubicación y Navegación)\n• ConstraintLayout responsivo</string>
-
-    <!-- Mensajes de error -->
-    <string name="error_sin_app_mapas">No se encontró una aplicación de mapas disponible en el dispositivo.</string>
 </resources>
