@@ -7,6 +7,7 @@
     <string name="titulo_barra_cartelera">Cartelera de Cine</string>
     <string name="titulo_barra_detalles">Detalles de la Película</string>
     <string name="titulo_barra_acerca_de">Acerca de</string>
+    <string name="titulo_barra_mapa">Ubicación del Cine</string>
 
     <!-- Opciones del menú superior -->
     <string name="menu_ir_al_cine">Ir al cine</string>
@@ -19,6 +20,21 @@
     <string name="etiqueta_sinopsis">Sinopsis</string>
     <string name="etiqueta_valoracion">Valoración</string>
     <string name="btn_volver">Volver</string>
+
+    <!-- Pantalla de Mapa del Cine -->
+    <string name="nombre_cine">Centro Comercial Cine Planelles</string>
+    <string name="subtitulo_cine">Cine de referencia en Utrera</string>
+    <string name="btn_centrar_cine">Centrar</string>
+
+    <!-- Ruta en Mapa -->
+    <string name="origen_ruta">Inicio: Centro de Utrera</string>
+    <string name="subtitulo_ruta_activa">Ruta trazada: 2.1 km • 5 min en coche</string>
+    <string name="msg_ruta_trazada">Ruta hacia el cine dibujada en el mapa</string>
+    <string name="btn_ver_ruta">Ver Ruta</string>
+    <string name="btn_navegar_gps">GPS Guiado</string>
+    <string name="btn_anterior_paso">Anterior</string>
+    <string name="btn_siguiente_paso">Siguiente</string>
+    <string name="btn_ver_todo">Ver Todo</string>
 
     <!-- Pantalla Acerca de -->
     <string name="acerca_de_nombre_app">iPeliculas</string>

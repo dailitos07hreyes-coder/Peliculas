@@ -1,12 +1,9 @@
 package com.example.myapplication.activity;
 
-import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,10 +27,6 @@ import java.util.List;
  * Gestiona el menú superior (Acerca de, Ir al cine, Cómo llegar) y la navegación a DetailActivity.
  */
 public class MainActivity extends AppCompatActivity implements MovieAdapter.OnMovieClickListener {
-
-    // Coordenadas y nombre del cine de referencia (Centro Comercial Cine Planelles)
-    public static final String CINEMA_LAT_LNG = "37.3298398,-5.4172532";
-    public static final String CINEMA_NAME = "Centro Comercial Cine Planelles";
 
     private MaterialToolbar toolbarMain;
     private RecyclerView recyclerViewMovies;
@@ -120,46 +113,20 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.OnMo
     }
 
     /**
-     * Abre la aplicación de mapas mostrando la ubicación exacta del cine.
+     * Abre la pantalla de mapa embebido (CinemaMapActivity) con Google Maps SDK.
      */
     private void openCinemaLocation() {
-        Uri locationUri = Uri.parse("geo:" + CINEMA_LAT_LNG + "?q=" + Uri.encode(CINEMA_NAME));
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, locationUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-
-        try {
-            startActivity(mapIntent);
-        } catch (ActivityNotFoundException e) {
-            // Fallback para cualquier otra app de mapas del dispositivo (sin abrir navegador)
-            Intent fallbackIntent = new Intent(Intent.ACTION_VIEW, locationUri);
-            try {
-                startActivity(fallbackIntent);
-            } catch (ActivityNotFoundException ex) {
-                Toast.makeText(this, R.string.error_sin_app_mapas, Toast.LENGTH_SHORT).show();
-            }
-        }
+        Intent mapIntent = new Intent(this, CinemaMapActivity.class);
+        startActivity(mapIntent);
     }
 
     /**
-     * Abre el modo de navegación paso a paso hacia el cine en Google Maps (cálculo de ruta y tiempo).
+     * Abre la pantalla de mapa embebido (CinemaMapActivity) trazando automáticamente la ruta en la propia app.
      */
     private void openCinemaDirections() {
-        Uri navigationUri = Uri.parse("google.navigation:q=" + CINEMA_LAT_LNG);
-        Intent navigationIntent = new Intent(Intent.ACTION_VIEW, navigationUri);
-        navigationIntent.setPackage("com.google.android.apps.maps");
-
-        try {
-            startActivity(navigationIntent);
-        } catch (ActivityNotFoundException e) {
-            // Fallback para cualquier otra app de navegación instalada
-            Intent genericNavIntent = new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("geo:0,0?q=" + CINEMA_LAT_LNG + "(" + Uri.encode(CINEMA_NAME) + ")"));
-            try {
-                startActivity(genericNavIntent);
-            } catch (ActivityNotFoundException ex) {
-                Toast.makeText(this, R.string.error_sin_app_mapas, Toast.LENGTH_SHORT).show();
-            }
-        }
+        Intent mapIntent = new Intent(this, CinemaMapActivity.class);
+        mapIntent.putExtra(CinemaMapActivity.EXTRA_SHOW_ROUTE, true);
+        startActivity(mapIntent);
     }
 
     /**

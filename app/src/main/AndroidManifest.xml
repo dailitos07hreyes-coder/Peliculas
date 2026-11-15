@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <!-- Permisos de red y ubicación para la API de Google Maps -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Permite la app detecte y abra Google Maps en Android 11 o superior -->
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +22,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoPeliculas">
 
+        <!-- Clave de la API de Google Maps SDK for Android -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="" />
+
         <!-- Pantalla principal: Cartelera -->
         <activity
             android:name=".activity.MainActivity"
@@ -19,7 +34,6 @@
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -33,6 +47,12 @@
         <!-- Pantalla Acerca de -->
         <activity
             android:name=".activity.AboutActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+
+        <!-- Pantalla del Mapa del Cine con Google Maps SDK -->
+        <activity
+            android:name=".activity.CinemaMapActivity"
             android:exported="false"
             android:parentActivityName=".activity.MainActivity" />
 
