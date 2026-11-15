@@ -17,7 +17,6 @@
     <string name="etiqueta_director">Director:</string>
     <string name="etiqueta_fecha_estreno">Fecha de estreno:</string>
     <string name="etiqueta_sinopsis">Sinopsis</string>
-    <string name="etiqueta_valoracion">Valoración</string>
 
     <!-- Pantalla de Mapa del Cine -->
     <string name="nombre_cine">Centro Comercial Cine Planelles</string>

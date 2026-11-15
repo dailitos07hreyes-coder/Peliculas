@@ -8,9 +8,7 @@
 
     <!-- Acentos cinematográficos -->
     <color name="cine_dorado">#FFC107</color>
-    <color name="cine_dorado_oscuro">#FFA000</color>
     <color name="cine_rojo">#E50914</color>
-    <color name="cine_rojo_oscuro">#B71C1C</color>
 
     <!-- Textos -->
     <color name="cine_texto_primario">#FFFFFF</color>
@@ -18,11 +16,7 @@
     <color name="cine_texto_atenuado">#7A7D8D</color>
 
     <!-- Chips y distintivos -->
-    <color name="cine_chip_fondo">#2D2338</color>
-    <color name="cine_chip_texto">#E0AAFF</color>
 
     <!-- Colores básicos del sistema -->
-    <color name="negro">#FF000000</color>
     <color name="blanco">#FFFFFFFF</color>
-    <color name="transparente">#00000000</color>
 </resources>
