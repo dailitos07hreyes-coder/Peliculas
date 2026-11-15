@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="300">
+    <!-- Fondo negro puro -->
+    <path
+        android:pathData="M0,0h200v300h-200z"
+        android:fillColor="#0A0A0A" />
+    <!-- Mano con hilos de marioneta -->
+    <path
+        android:pathData="M60,60 L140,60 L130,70 L70,70 Z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M100,70 L100,110"
+        android:strokeWidth="2"
+        android:strokeColor="#E0E0E0" />
+    <path
+        android:pathData="M80,70 L70,120"
+        android:strokeWidth="1.5"
+        android:strokeColor="#E0E0E0" />
+    <path
+        android:pathData="M120,70 L130,120"
+        android:strokeWidth="1.5"
+        android:strokeColor="#E0E0E0" />
+    <!-- Rosa roja emblemática en la solapa -->
+    <path
+        android:pathData="M100,180m-20,0a20,20 0,1 1,40 0a20,20 0,1 1,-40 0"
+        android:fillColor="#B71C1C" />
+    <path
+        android:pathData="M100,180m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"
+        android:fillColor="#D32F2F" />
+    <path
+        android:pathData="M100,180m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"
+        android:fillColor="#FF5252" />
+    <!-- Tallo verde -->
+    <path
+        android:pathData="M100,200 Q95,220 102,235"
+        android:strokeWidth="3"
+        android:strokeColor="#2E7D32" />
+</vector>

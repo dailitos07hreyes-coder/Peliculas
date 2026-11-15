@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="160dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="300">
+    <!-- Fondo espacio profundo -->
+    <path
+        android:pathData="M0,0h200v300h-200z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="270"
+                android:startColor="#030A1A"
+                android:endColor="#000205"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Agujero Negro Gargantua - Disco de acreción -->
+    <path
+        android:pathData="M100,140m-60,0a60,60 0,1 1,120 0a60,60 0,1 1,-120 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="140"
+                android:gradientRadius="60"
+                android:startColor="#FFE082"
+                android:endColor="#E65100"
+                android:type="radial" />
+        </aapt:attr>
+    </path>
+    <!-- Horizonte de sucesos negro central -->
+    <path
+        android:pathData="M100,140m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0"
+        android:fillColor="#000000" />
+    <!-- Línea de luz ecuatorial curvada -->
+    <path
+        android:pathData="M15,140 Q100,110 185,140 Q100,170 15,140 Z"
+        android:fillColor="#FFF8E1" />
+    <path
+        android:pathData="M100,140m-20,0a20,20 0,1 1,40 0a20,20 0,1 1,-40 0"
+        android:fillColor="#000000" />
+    <!-- Nave Endurance silueta -->
+    <path
+        android:pathData="M100,240m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF" />
+</vector>

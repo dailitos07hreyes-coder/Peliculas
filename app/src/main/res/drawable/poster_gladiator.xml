@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="160dp"
+    android:height="200dp"
+    android:viewportWidth="160"
+    android:viewportHeight="200">
+    <path
+        android:pathData="M0,0h160v200h-160z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="270"
+                android:startColor="#3E2723"
+                android:endColor="#1B0000"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Casco Romano Gladiador -->
+    <path
+        android:pathData="M80,45 Q115,45 115,85 L110,135 Q80,145 50,135 L45,85 Q45,45 80,45 Z"
+        android:fillColor="#FFB300" />
+    <!-- Hendidura visera -->
+    <path
+        android:pathData="M55,80 L105,80 L100,105 L60,105 Z"
+        android:fillColor="#1B0000" />
+    <!-- Cresta imperial -->
+    <path
+        android:pathData="M76,25 L84,25 L84,55 L76,55 Z"
+        android:fillColor="#C62828" />
+</vector>

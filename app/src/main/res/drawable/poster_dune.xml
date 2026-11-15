@@ -1,0 +1,43 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="160dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="300">
+    <!-- Fondo desierto nocturno -->
+    <path
+        android:pathData="M0,0h200v300h-200z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="270"
+                android:startColor="#2A1508"
+                android:endColor="#0D0908"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Sol de Arrakis -->
+    <path
+        android:pathData="M100,100m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="45"
+                android:startColor="#FFD54F"
+                android:endColor="#E65100"
+                android:type="radial" />
+        </aapt:attr>
+    </path>
+    <!-- Duna 1 -->
+    <path
+        android:pathData="M0,160 Q80,120 200,200 L200,300 L0,300 Z"
+        android:fillColor="#BF360C" />
+    <!-- Duna 2 -->
+    <path
+        android:pathData="M0,210 Q120,180 200,240 L200,300 L0,300 Z"
+        android:fillColor="#3E1A0E" />
+    <!-- Especia destello -->
+    <path
+        android:pathData="M100,60 L103,75 L118,78 L103,81 L100,96 L97,81 L82,78 L97,75 Z"
+        android:fillColor="#FFE082" />
+</vector>

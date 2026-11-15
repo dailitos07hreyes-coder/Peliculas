@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="160dp"
+    android:height="200dp"
+    android:viewportWidth="160"
+    android:viewportHeight="200">
+    <path
+        android:pathData="M0,0h160v200h-160z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="270"
+                android:startColor="#102027"
+                android:endColor="#000000"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Emblema Batman iluminado por foco de Gotham -->
+    <path
+        android:pathData="M80,100m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="80"
+                android:centerY="100"
+                android:gradientRadius="45"
+                android:startColor="#CFD8DC"
+                android:endColor="#37474F"
+                android:type="radial" />
+        </aapt:attr>
+    </path>
+    <!-- Silueta murciélago -->
+    <path
+        android:pathData="M80,85 L84,92 L93,90 L88,103 L105,95 L95,115 L80,108 L65,115 L55,95 L72,103 L67,90 L76,92 Z"
+        android:fillColor="#000000" />
+</vector>

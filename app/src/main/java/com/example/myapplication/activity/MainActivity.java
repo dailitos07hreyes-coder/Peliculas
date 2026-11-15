@@ -1,4 +1,4 @@
-    package com.example.myapplication;
+    package com.example.myapplication.activity;
 
 import android.os.Bundle;
 
@@ -8,7 +8,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.myapplication.R;
+
+    public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

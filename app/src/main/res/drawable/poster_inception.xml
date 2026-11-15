@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="160dp"
+    android:height="200dp"
+    android:viewportWidth="160"
+    android:viewportHeight="200">
+    <path
+        android:pathData="M0,0h160v200h-160z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="270"
+                android:startColor="#0D1B2A"
+                android:endColor="#1B263B"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Peonza / Tótem -->
+    <path
+        android:pathData="M78,60 L82,60 L81,85 L89,85 Q80,130 80,140 Q80,130 71,85 L79,85 Z"
+        android:fillColor="#E0E1DD" />
+    <!-- Onda gravitacional del sueño -->
+    <path
+        android:pathData="M40,140 Q80,155 120,140 Q80,125 40,140"
+        android:strokeWidth="1.5"
+        android:strokeColor="#415A77" />
+    <path
+        android:pathData="M25,140 Q80,165 135,140 Q80,115 25,140"
+        android:strokeWidth="1"
+        android:strokeColor="#778DA9" />
+</vector>

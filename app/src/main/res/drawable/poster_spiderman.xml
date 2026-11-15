@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="160dp"
+    android:height="200dp"
+    android:viewportWidth="160"
+    android:viewportHeight="200">
+    <path
+        android:pathData="M0,0h160v200h-160z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="315"
+                android:startColor="#880E4F"
+                android:endColor="#0D47A1"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Telarañas y máscara -->
+    <path
+        android:pathData="M80,30 L80,170 M20,100 L140,100 M30,50 L130,150 M30,150 L130,50"
+        android:strokeWidth="1.5"
+        android:strokeColor="#50FFFFFF" />
+    <!-- Ojos de Spider-Man -->
+    <path
+        android:pathData="M55,95 Q70,95 72,115 Q60,120 48,110 Z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeColor="#D50000" />
+    <path
+        android:pathData="M105,95 Q90,95 88,115 Q100,120 112,110 Z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeColor="#D50000" />
+</vector>

@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="160dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="300">
+    <!-- Fondo oscuro fuego -->
+    <path
+        android:pathData="M0,0h200v300h-200z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="270"
+                android:startColor="#1A0A00"
+                android:endColor="#000000"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Explosión de fisión -->
+    <path
+        android:pathData="M100,140m-70,0a70,70 0,1 1,140 0a70,70 0,1 1,-140 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="140"
+                android:gradientRadius="70"
+                android:startColor="#FFF3E0"
+                android:endColor="#D84315"
+                android:type="radial" />
+        </aapt:attr>
+    </path>
+    <!-- Anillo de partículas atómicas -->
+    <path
+        android:pathData="M30,140 A70,30 0 1,0 170,140 A70,30 0 1,0 30,140"
+        android:strokeWidth="3"
+        android:strokeColor="#FFAB00" />
+    <path
+        android:pathData="M100,70 A30,70 0 1,0 100,210 A30,70 0 1,0 100,70"
+        android:strokeWidth="3"
+        android:strokeColor="#FF6D00" />
+    <!-- Silueta sombrero -->
+    <path
+        android:pathData="M70,230 Q100,220 130,230 L125,245 L75,245 Z"
+        android:fillColor="#212121" />
+</vector>
