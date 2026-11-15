@@ -1,9 +1,52 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Tema base de la aplicación: Cine temático oscuro con acentos dorados y rojos -->
+    <style name="Base.Theme.ProyectoPeliculas" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/cine_dorado</item>
+        <item name="colorOnPrimary">@color/cine_fondo</item>
+        <item name="colorPrimaryContainer">@color/cine_superficie_variante</item>
+        <item name="colorOnPrimaryContainer">@color/cine_dorado</item>
+
+        <item name="colorSecondary">@color/cine_rojo</item>
+        <item name="colorOnSecondary">@color/blanco</item>
+
+        <!-- Fondos y superficies oscuras -->
+        <item name="android:windowBackground">@color/cine_fondo</item>
+        <item name="colorSurface">@color/cine_superficie</item>
+        <item name="colorOnSurface">@color/cine_texto_primario</item>
+        <item name="colorOnSurfaceVariant">@color/cine_texto_secundario</item>
+
+        <!-- Color de control activo (para estrellas doradas de RatingBar) -->
+        <item name="colorControlActivated">@color/cine_dorado</item>
+        <item name="colorControlNormal">@color/cine_texto_atenuado</item>
+
+        <!-- Barra de estado y navegación -->
+        <item name="android:statusBarColor">@color/cine_fondo</item>
+        <item name="android:navigationBarColor">@color/cine_fondo</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 
-    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+    <style name="Theme.ProyectoPeliculas" parent="Base.Theme.ProyectoPeliculas" />
+
+    <!-- Estilo para la Toolbar Cinematográfica -->
+    <style name="CinemaToolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/cine_superficie</item>
+        <item name="titleTextColor">@color/cine_dorado</item>
+        <item name="subtitleTextColor">@color/cine_texto_secundario</item>
+        <item name="navigationIconTint">@color/cine_dorado</item>
+    </style>
+
+    <!-- Estilo para la RatingBar pequeña de la lista -->
+    <style name="CinemaRatingBarSmall" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressTint">@color/cine_dorado</item>
+        <item name="android:progressBackgroundTint">@color/cine_texto_atenuado</item>
+        <item name="android:secondaryProgressTint">@color/cine_dorado</item>
+    </style>
+
+    <!-- Estilo para la RatingBar grande de detalle -->
+    <style name="CinemaRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressTint">@color/cine_dorado</item>
+        <item name="android:progressBackgroundTint">@color/cine_texto_atenuado</item>
+        <item name="android:secondaryProgressTint">@color/cine_dorado</item>
+    </style>
 </resources>
